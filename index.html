@@ -1,0 +1,176 @@
+<html>
+
+
+<style>
+
+.login{
+  position:absolute;
+    margin: 0% 70%;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #1a73e8;
+    position: relative;
+    z-index: 1;
+}
+
+
+.bg{
+position:absolute;
+        z-index: -1;
+        top:0;
+        left:0; 
+        
+}
+.bg1{
+  margin: 860px 0px;
+  position:absolute;
+        z-index: -1;
+        top:0;
+        left:0; 
+        
+}
+
+
+
+
+
+.dashboard{
+  display: inline-block; 
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: none; 
+    border-radius: 4px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a73e8;
+    position: relative;
+    overflow:hidden;
+    vertical-align: top;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.btn{
+  width: 180px;
+  height: 30px;
+  background-color: #0b82f3;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  padding-right: 25px;
+}
+
+.btn img{
+position: absolute;
+top: 0;
+right: 27px;
+
+}
+
+
+.btn:hover{
+  background-color: #467bf3;
+}
+
+.btn-connect{
+  position: absolute;
+  /* right: 0px; */
+  left: 1212px;
+  top: 16px;
+}
+
+.btn-connect2{
+  position: absolute;
+  top: 538px;
+  left: 514px;
+}
+
+#login-status{
+  position: absolute;
+  top: 538px;
+  left: 531px;
+  display: none;
+}
+
+#walletaddress{
+  display: none;
+  position: absolute;
+  left: 1250px;
+  /* display: none; */
+  width: 160px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+}
+
+#walletaddress span{
+  font-size: 18px;
+}
+.avatar{
+  position: relative;
+}
+
+.walletadr{
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+</style>
+
+
+
+<head>
+  <title>Web3 Metamask Login</title> 
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+  <script language="javascript" type="text/javascript" src="./demo.js"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+</head>
+  <img src="fon1.png" class="bg">
+
+  <button id = 'loginbutton' class="btn btn-connect" onclick="walletconnect()">Connect Wallet<img src="metamask.svg"></button>
+  <div id = 'walletaddress'>
+    <div class="walletadr">
+      <span id = 'walletaddressstr'>0xB80e...32de</span>
+    </div>
+    
+    <div class="avatar">
+      <img src="avatar.png" class="bg">
+    </div>
+    
+  </div>
+
+  <div id="login-status">
+    <button class="btn btn-approve" onclick="approve()">Approve</button>
+  </div>
+  <button id = 'loginbutton2' class="btn btn-connect2" onclick="walletconnect()">
+    Connect Wallet
+    <img src="metamask.svg">
+  </button>
+
+</div>
+</div>
+</div>
+
+  <img src="fon2.png" class="bg1">
+
+
+</div>
+
+  <script>
+    
+  </script> 
+
+</body>
+</html>
